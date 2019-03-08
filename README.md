@@ -35,7 +35,7 @@ Potential Enhancements:
 
 
 ## Table
-Regression Items
+test_story
   Id, Area, persona, test name, short description, more info
 Test History
   Id, regression id, tester, date completed, buddy, notes, bugs
