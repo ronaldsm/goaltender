@@ -11,7 +11,7 @@ Portal and its accompanying subsystems are too complex to be regression tested e
 - Shared prioritized regression: give flexibility to testers to run tests for a given area, without a script to run, to test basic functionality, and view from the lens of a user, rather than of a feature.
 
 Since January we have been using the Shared prioritized regression, however there are no tools that allow us to divide the product into its major areas, and guide us to which would be the most important to test based on priority to business, time since last regression test, and other change which increases it’s risk.
-We also don’t have a way to easily see the history of regression testing to find insights on it. Currently its a manual process of using a spreadsheet to do the calculations and prioritizations, then the result is copied into our wiki where it can be viewed/edited by everyone in real time. Its a somewhat laborious manual process to prep this data.
+We also don’t have a way to easily see the history of regression testing to find insights on it. Currently its a manual process of using a spreadsheet to do the calculations and prioritizations, then the result is copied into our wiki where it can be viewed/edited by everyone in real time. Its a somewhat laborious manual process to prep this data. https://wiki.cisco.com/display/AMPE/Regression+Shared+Worksheet
 
 While the primary goal is to manage the task of doing regression testing, there are additional benefits that can be realized
 - Since a tester only works on a handful of tasks, they can spend a little time and do more than just look at the happy path
