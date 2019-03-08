@@ -1,2 +1,22 @@
-<h1>Tests#index</h1>
-<p>Find me in app/views/tests/index.html.erb</p>
+<h1>All Tests</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Priority</th>
+      <th scope="col">Persona</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tests.each do |test| %>
+    <tr>
+      <td><%= test.name %></td>
+      <td><%= test.priority %></td>
+      <td><%= test.persona %></td>
+      <td><%= test.description %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
