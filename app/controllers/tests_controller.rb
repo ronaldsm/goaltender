@@ -17,6 +17,12 @@ class TestsController < ApplicationController
     redirect_to @test
   end
 
+  def destroy
+    @test = Test.find(params[:id])
+    @test.destroy
+    redirect_to tests_url
+  end
+
   def edit
     @test = Test.find(params[:id])
   end

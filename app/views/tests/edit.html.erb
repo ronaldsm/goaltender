@@ -29,5 +29,11 @@
     <textarea class="form-control" id="DescriptionFormTextArea" rows="3" name="test[description]" value=<%= @test.description %>></textarea>
   </div>
   <%= link_to 'Cancel', tests_path %>
+  <%= (link_to '<i class="fas"></i> Delete'.html_safe, test_path(@test),
+        method: :delete,
+        data: {confirm: 'Are you sure you want to delete this item? This action cannot be undone.'},
+        :class => "btn btn-secondary"
+      )
+      %>
   <button type="submit" class="btn btn-primary">Save Changes</button>
 <% end %>
