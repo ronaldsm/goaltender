@@ -1,5 +1,4 @@
 <h1>All Tests</h1>
-
 <%= link_to 'Create new test', new_test_path %>
 
 <table class="table">
@@ -17,7 +16,7 @@
       <td><%= link_to test.name, edit_test_path(test) %></td>
       <td><%= test.priority %></td>
       <td><%= test.persona %></td>
-      <td><%= test.description %></td>
+      <td><%= auto_link(simple_format(test.description)) %></td>
     </tr>
     <% end %>
   </tbody>

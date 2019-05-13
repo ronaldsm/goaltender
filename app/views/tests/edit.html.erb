@@ -26,7 +26,7 @@
   </div>
   <div class="form-group">
     <label for="DescriptionFormTextArea">Description</label>
-    <textarea class="form-control" id="DescriptionFormTextArea" rows="3" name="test[description]"> <%= @test.description %></textarea>
+    <textarea class="form-control" id="DescriptionFormTextArea" rows="3" name="test[description]"><%= @test.description %></textarea>
   </div>
   <%= link_to 'Cancel', tests_path %>
   <%= (link_to '<i class="fas"></i> Delete'.html_safe, test_path(@test),
