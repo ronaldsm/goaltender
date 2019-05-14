@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @persona.name %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= auto_link(simple_format(@persona.details)) %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= auto_link(simple_format(@persona.url)) %>
+</p>
+
+<%= link_to 'Edit', edit_persona_path(@persona) %> |
+<%= link_to 'Back', personas_path %>
