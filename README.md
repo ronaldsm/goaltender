@@ -35,7 +35,7 @@ Potential Enhancements:
 
 
 ## Table
-test_story
+core
   Id, Area, persona, test name, short description, more info
 Test History
   Id, regression id, tester, date completed, buddy, notes, bugs
@@ -43,6 +43,8 @@ User
   Id, Name
 Bump priority
   Id, reason, regression id, duration (times, or time bound?), severity
+Persona
+  Id, name, details, url
 
 ### Pages
 - add/edit regression item

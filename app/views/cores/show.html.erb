@@ -1,0 +1,27 @@
+<p>
+  <strong>Area:</strong>
+  <%= @core.area %>
+</p>
+
+<p>
+  <strong>Persona:</strong>
+  <%= @core.persona %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @core.name %>
+</p>
+
+<p>
+  <strong>Short description:</strong>
+  <%= @core.short_description %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @core.details %>
+</p>
+
+<%= link_to 'Edit', edit_core_path(@core) %> |
+<%= link_to 'Back', cores_path %>

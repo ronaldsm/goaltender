@@ -1,0 +1,33 @@
+<h1>Cores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Persona</th>
+      <th>Name</th>
+      <th>Short description</th>
+      <th>Details</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cores.each do |core| %>
+      <tr>
+        <td><%= core.area_id %></td>
+        <td><%= core.persona %></td>
+        <td><%= core.name %></td>
+        <td><%= core.short_description %></td>
+        <td><%= core.details %></td>
+        <td><%= link_to 'Show', core %></td>
+        <td><%= link_to 'Edit', edit_core_path(core) %></td>
+        <td><%= link_to 'Destroy', core, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Core', new_core_path %>
